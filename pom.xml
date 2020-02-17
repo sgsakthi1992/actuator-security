@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <project.basedir></project.basedir>
+        <project.basedir>https://github.com/sgsakthi1992/actuator-security</project.basedir>
     </properties>
 
     <dependencies>
@@ -75,23 +75,11 @@
                         </goals>
                     </execution>
                 </executions>
-
                 <configuration>
                     <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
                     <prefix>git</prefix>
-                    <verbose>false</verbose>
                     <generateGitPropertiesFile>true</generateGitPropertiesFile>
-                    <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties
-                    </generateGitPropertiesFilename>
-                    <format>json</format>
-                    <gitDescribe>
-                        <skip>false</skip>
-                        <always>false</always>
-                        <dirty>-dirty</dirty>
-                    </gitDescribe>
-
                 </configuration>
-
             </plugin>
         </plugins>
     </build>

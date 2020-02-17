@@ -12,3 +12,6 @@ management:
     health:
       roles: admin
       show-details: when-authorized
+  info:
+    git:
+      mode: full
