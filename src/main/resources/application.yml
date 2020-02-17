@@ -1,0 +1,14 @@
+spring:
+  security:
+    user:
+      password: secret
+      roles: admin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      roles: admin
+      show-details: when-authorized
