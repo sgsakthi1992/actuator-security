@@ -9,9 +9,20 @@ management:
       exposure:
         include: "*"
   endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
     health:
       roles: admin
       show-details: when-authorized
+  metrics:
+    export:
+      prometheus:
+        enabled: true
   info:
     git:
       mode: full
+
+server:
+  port: 8081
